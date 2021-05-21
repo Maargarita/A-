@@ -338,9 +338,10 @@ body{
 	margin-bottom: 75px;
 }
 .footer-menu{
-	float: left;
+	display: inline-block;
 	margin-right: 3.9%; /*40px*/
 	margin-top: 5px;
+	text-align: left;
 }
 .footer-menu:last-child{
 	margin-right: 0px;
@@ -439,7 +440,7 @@ body{
 		font-size: 16px;
 	}
 	.footer-adress{
-		margin-right: 2%;
+		margin-right: 1%;
 		/*margin-bottom: 65px;*/
 	}
 	.footer-menu{
@@ -515,7 +516,7 @@ body{
 		font-weight: normal !important;
 		font-size: 16px !important;
 	}
-	.feedback .container{
+	.feedback .container, .main-footer .container{
 		display: block;
 	}
 	.feedback-instractions, .feedback-form{
@@ -526,7 +527,7 @@ body{
 	.feedback-form td{
 		padding-top: 15px;
 	}
-	.feedback-form .title, .footer-adress p{
+	.feedback-form .title, .footer-adress p, .footer-bottom .copyright, .footer-social-promo{
 		font-size: 16px;
 	}
 	.feedback-form input[type="text"], .feedback-form textarea{
@@ -560,23 +561,19 @@ body{
 		margin-top: 25px;
 	}
 	.footer-adress{
-		position: relative;
-	}
-	.footer-adress p{
-		position: absolute;
-		top: 150px;
-    	left: 15px;
-    	width: 250px;
+		float: none;
+		margin-bottom: 40px;
 	}
 	.footer-menu{
-		margin-right: 1%;
+		margin-right: 4%;
 	}
 	.footer-bottom .copyright{
 		margin-right: 3.4%;
-		margin-left: 260px;
+		margin-bottom: 10px;
 	}
 	.footer-social-promo{
 		margin-right: 1%;
+		margin-bottom: 20px;
 	}
 	.footer-menu h3{
 		margin-bottom: 15px;
@@ -586,12 +583,12 @@ body{
 		margin-bottom: 10px;
 		font-size: 16px;
 	}
-.footer-social{
-	margin-top: -10px;
-}
-.social-btn{
-	margin-right: 10px;
-	width: 40px;
-	height: 40px;
-}
+	.footer-social{
+		margin-top: -10px;
+	}
+	.social-btn{
+		margin-right: 10px;
+		width: 40px;
+		height: 40px;
+	}
 }
