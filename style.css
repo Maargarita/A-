@@ -18,7 +18,9 @@ body{
 	background: #6451d5;
 	padding-top: 30px;
 	padding-bottom: 80px;
-	
+}
+.main-header-inner{
+	padding-top: 70px;
 }
 .main-header .container{
 	position: relative;
@@ -68,7 +70,7 @@ body{
 	width: 430px;
 	
 }
-.promo-title{
+.promo-title, .page-title{
 	font-family: Trebuchet MS,Tahoma,sans-serif;
 	font-size: 45px;
 	line-height: 48px;
@@ -101,7 +103,46 @@ body{
 .btn:active{
 	color: #6f6898;
 }
-.main-header .container::after{
+.breadcrups{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+.breadcrups li{
+	position: relative;
+	display: inline-block;
+	font-size: 12px;
+	font-family: Tahoma,Verdana,sans-serif;
+	color: #ffffff;
+	margin-right: 60px;
+}
+.breadcrups li:last-child{
+	margin-right: 0;
+}
+.breadcrups li::after{
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 5px;
+	top: 12px;
+	right: -40px;
+	background: url("img/ico-nav-arrow.png") no-repeat;
+}
+.breadcrups li:last-child::after{
+	display: none;
+}
+.breadcrups a{
+	color: #ffffff;
+	text-decoration: none;
+}
+.breadcrups a:hover{
+	text-decoration: underline;
+}
+.breadcrups a:active{
+	opacity: 0.3;
+}
+.main-header .container::after{ /*phone img*/
 	content: "";
 	position: absolute;
 	bottom: -40px;
@@ -110,6 +151,9 @@ body{
 	height: 450px;
 	z-index: -1;
 	background: url("img/items.png") no-repeat;
+}
+.main-header-inner .container::after{
+	display: none;
 }
 .features{
 	padding-top: 125px;
@@ -129,7 +173,6 @@ body{
 }
 .feature-item:last-child{
 	margin: 0;
-
 }
 .feature-icon{
 	position: absolute;
